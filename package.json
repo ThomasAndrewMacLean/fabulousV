@@ -1,5 +1,5 @@
 {
-  "name": "next_template",
+  "name": "fabulousV",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
@@ -14,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ThomasAndrewMacLean/next_template.git"
+    "url": "git+https://github.com/ThomasAndrewMacLean/fabulousV.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ThomasAndrewMacLean/next_template/issues"
+    "url": "https://github.com/ThomasAndrewMacLean/fabulousV/issues"
   },
-  "homepage": "https://github.com/ThomasAndrewMacLean/next_template#readme",
+  "homepage": "https://github.com/ThomasAndrewMacLean/fabulousV#readme",
   "dependencies": {
     "@types/marked": "^1.1.0",
     "@types/styled-components": "^5.1.1",

@@ -2,7 +2,7 @@ output.markdown('# Hello');
 
 const token = XXXXXXXX;
 const x = await fetch(
-  'https://api.github.com/repos/ThomasAndrewMacLean/next_template/dispatches',
+  'https://api.github.com/repos/ThomasAndrewMacLean/fabulousV/dispatches',
   {
     method: 'POST',
     headers: {
