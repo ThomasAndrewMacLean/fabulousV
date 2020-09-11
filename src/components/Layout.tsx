@@ -2,15 +2,12 @@ import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { T, Image } from '.';
-import { prefix } from '../utils';
-import { pages } from '../constants/pages';
+import { Image } from '.';
 
 type LayoutProps = {
   children: ReactNode;
-  page: string;
-};
-const Layout = ({ children, page }: LayoutProps) => {
+ };
+const Layout = ({ children }: LayoutProps) => {
   return (
     <Main>
       <Header>
@@ -44,7 +41,6 @@ const Header = styled.header`
   nav {
   }
   ul {
-    
     flex-direction: row;
     display: flex;
     list-style: none;
@@ -62,18 +58,7 @@ const Header = styled.header`
   }
 `;
 
-const NavLink = styled.a<{ active: boolean }>`
-  text-decoration: none;
-  color: unset;
-  position: relative;
-  &:after {
-    content: '';
-    display: ${(props) => (props.active ? 'block' : 'none')};
-    width: 100%;
-    height: 3px;
-    background: black;
-  }
-`;
+
 const Footer = styled.footer`
   display: flex;
   justify-content: center;
