@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { T } from '.';
+import { T, Image } from '.';
 import { prefix } from '../utils';
 import { pages } from '../constants/pages';
 
@@ -14,28 +14,16 @@ const Layout = ({ children, page }: LayoutProps) => {
   return (
     <Main>
       <Header>
-        <T translationKey="title"></T>
-        <nav>
-          <ul>
-          {pages
-              .filter((p) => p.showInNav)
-              .map((pag, i) => {
-                return (
-                  <li key={i}>
-                    <NavLink active={page === pag.id} href={prefix + pag.url}>
-                      <T translationKey={pag.id + 'Title'}></T>
-                    </NavLink>
-                  </li>
-                );
-              })}
-        
-          </ul>
-        </nav>
+        <Image
+          imageKey="logo-single-page"
+          alt="fabulous V, nagelstyliste waasmunster"
+          style={{ margin: 'auto', marginTop: '6rem' }}
+        />
       </Header>
       {children}
       <Footer>
-        <div>facebook</div>
-        <address>contact</address>
+        <a href="mailto:veerle@fabulousv.be">contact</a>
+        {/* <address>contact</address> */}
       </Footer>
     </Main>
   );
@@ -64,6 +52,13 @@ const Header = styled.header`
       margin: 0 1rem;
     }
   }
+
+  @media (max-width: 600px) {
+    img {
+      max-width: 80%;
+      margin-top: 1rem !important;
+    }
+  }
 `;
 
 const NavLink = styled.a<{ active: boolean }>`
@@ -80,8 +75,16 @@ const NavLink = styled.a<{ active: boolean }>`
 `;
 const Footer = styled.footer`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 2rem 0;
+  margin-top: 4rem;
+  /* position: absolute;
+  bottom: 2rem;
+  width: 100%;
+  left: 0; */
+  a {
+    color: #333;
+  }
 `;
 
 Layout.propTypes = {

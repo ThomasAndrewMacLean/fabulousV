@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400&display=swap');
 
 :root {
-  --background-dark: #77f;
+  --colour1: #e2a041;
+  --colour2: #f24f64;
   --border: 3px solid black;
 }
 * {
@@ -13,6 +14,24 @@
 }
 ::selection {
   background: var(--background-light); /* WebKit/Blink Browsers */
+}
+html {
+  background-color: var(--colour1);
+  padding: 2rem;
+}
+body {
+  min-height: calc(100vh - 4rem);
+  background-color: white;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  html {
+    padding: 1rem;
+  }
+  body {
+    min-height: calc(100vh - 2rem);
+  }
 }
 html,
 body {
