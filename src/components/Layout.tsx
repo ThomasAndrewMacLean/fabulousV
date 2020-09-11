@@ -44,6 +44,7 @@ const Header = styled.header`
   nav {
   }
   ul {
+    
     flex-direction: row;
     display: flex;
     list-style: none;
