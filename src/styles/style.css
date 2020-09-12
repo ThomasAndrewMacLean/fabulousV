@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap');
 :root {
   --colour1: #e2a041;
   --colour2: #f24f64;
@@ -13,14 +12,13 @@
   touch-action: manipulation;
 }
 ::selection {
-  background: var(--background-light); /* WebKit/Blink Browsers */
 }
 html {
   background-color: var(--colour1);
-  padding: 2rem;
+  padding: 1rem;
 }
 body {
-  min-height: calc(100vh - 4rem);
+  min-height: calc(100vh - 2rem);
   background-color: white;
   color: #333;
 }
@@ -35,7 +33,7 @@ body {
 }
 html,
 body {
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Roboto', sans-serif;
 
   width: 100%;
   overflow-x: hidden;

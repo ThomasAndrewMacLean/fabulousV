@@ -21,8 +21,18 @@ const IndexPage = ({ translations, pics, seo }: IndexPageProps) => {
             <Main>
               <SEO seo={seo}></SEO>
               <div className="main">
-                <T translationKey="productenLijst"></T>
-                <T translationKey="address"></T>
+                <T
+                  style={{ fontFamily: 'Playfair Display', paddingTop: '3rem' }}
+                  translationKey="slogan"
+                ></T>
+                <span className="contact">
+                  <div className="pb2">Fabulous V</div>
+                  <div>Veerle Van Overloop</div>
+                  <div>Vinkenlaan 26</div>
+                  <div className="pb2">9250 Waasmunster</div>
+                  <div>0473/71 29 11</div>
+                  <div>veerle@fabulousv.be</div>
+                </span>
               </div>
             </Main>
           </Layout>
@@ -38,7 +48,17 @@ const Main = styled.main`
     list-style: none;
     margin-left: 0;
   }
+  strong {
+    color: var(--colour2);
+    font-style: italic;
+  }
 
+  .contact {
+    line-height: 1.5rem;
+    .pb2 {
+      padding-bottom: 1rem;
+    }
+  }
   .main {
     display: flex;
     justify-content: space-around;
