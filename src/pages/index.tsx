@@ -22,11 +22,14 @@ const IndexPage = ({ translations, pics, seo }: IndexPageProps) => {
               <SEO seo={seo}></SEO>
               <div className="main">
                 <T
-                  style={{ fontFamily: 'Playfair Display', paddingTop: '3rem' }}
+                  style={{
+                    fontFamily: 'Playfair Display',
+                    paddingTop: '3rem',
+                    paddingBottom: '3rem',
+                  }}
                   translationKey="slogan"
                 ></T>
                 <span className="contact">
-                  <div className="pb2">Fabulous V</div>
                   <div>Veerle Van Overloop</div>
                   <div>Vinkenlaan 26</div>
                   <div className="pb2">9250 Waasmunster</div>
