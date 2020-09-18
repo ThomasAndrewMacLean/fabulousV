@@ -21,20 +21,42 @@ const IndexPage = ({ translations, pics, seo }: IndexPageProps) => {
             <Main>
               <SEO seo={seo}></SEO>
               <div className="main">
-                <T
-                  style={{
-                    fontFamily: 'Playfair Display',
-                    paddingTop: '3rem',
-                    paddingBottom: '3rem',
-                  }}
-                  translationKey="slogan"
-                ></T>
+                <div className="textWrap">
+                  <p className="textje">
+                    Handen en nagels zeggen veel over een mens. <br></br>
+                    Vooral vrouwen vinden hun nagels belangrijk. Ze vijlen ze.
+                    Ze lakken ze. Veerle van Overloop heeft een praktijk
+                    "Fabulous V" in Waasmunster. "Fabulous V" staat voor
+                    elegantie, stijl en passie. Veerle volt al jaren de trends
+                    op omtrent nagels, zelf draagt ze al jaren gelnagels. Bij
+                    "Fabulous V" kunt u terecht voor een manicure, gellak,
+                    gelnagels en gewoon lakken.
+                  </p>
+                  <T
+                    style={{
+                      fontFamily: 'Playfair Display',
+                      paddingTop: '5rem',
+                      paddingBottom: '0rem',
+                    }}
+                    translationKey="slogan"
+                  ></T>
+                </div>
                 <span className="contact">
+                  <a href="">
+                    <img src="icon-instagram.svg" alt="facebookicon" />
+                  </a>
+                  <a href="">
+                    <img src="icon-facebook.svg" alt="facebookicon" />
+                  </a>
                   <div>Veerle Van Overloop</div>
                   <div>Vinkenlaan 26</div>
                   <div className="pb2">9250 Waasmunster</div>
                   <div>0473/71 29 11</div>
-                  <div>veerle@fabulousv.be</div>
+                  <div>
+                    <a className="emailLink" href="mailto:veerle@fabulousv.be">
+                      veerle@fabulousv.be
+                    </a>
+                  </div>
                 </span>
               </div>
             </Main>
@@ -61,17 +83,33 @@ const Main = styled.main`
     .pb2 {
       padding-bottom: 1rem;
     }
+    a {
+      display: inline;
+      margin-right: 1rem;
+      img {
+        height: 30px;
+        opacity: 0.8;
+      }
+    }
+
+    .emailLink {
+      color: inherit;
+      text-decoration: none;
+    }
   }
   .main {
     display: flex;
     justify-content: space-around;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 820px) {
     .main {
       flex-direction: column;
       align-items: center;
       text-align: center;
+    }
+    .contact {
+      margin-top: 4rem;
     }
   }
 `;

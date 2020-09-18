@@ -19,7 +19,7 @@ const Layout = ({ children }: LayoutProps) => {
       </Header>
       {children}
       <Footer>
-        <a href="mailto:veerle@fabulousv.be">contact</a>
+        {/* <a href="mailto:veerle@fabulousv.be">contact</a> */}
         {/* <address>contact</address> */}
       </Footer>
     </Main>

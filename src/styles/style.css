@@ -15,21 +15,21 @@
 }
 html {
   background-color: var(--colour1);
-  padding: 1rem;
+  padding: 0.5rem;
 }
 body {
-  min-height: calc(100vh - 2rem);
+  min-height: calc(100vh - 1rem);
   background-color: white;
   color: #333;
 }
 
 @media (max-width: 600px) {
-  html {
+  /* html {
     padding: 1rem;
   }
   body {
     min-height: calc(100vh - 2rem);
-  }
+  } */
 }
 html,
 body {
@@ -50,4 +50,16 @@ li {
 .showKeys {
   background: pink !important;
   color: red !important;
+}
+
+.textje {
+  max-width: 400px;
+  padding-right: 1rem;
+  /* padding-top: 0.7rem; */
+  border-right: 2px solid var(--colour2);
+  text-align: right;
+  margin-right: 1rem;
+}
+.textWrap {
+  display: flex;
 }
