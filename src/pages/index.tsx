@@ -42,16 +42,28 @@ const IndexPage = ({ translations, pics, seo }: IndexPageProps) => {
                   ></T>
                 </div>
                 <span className="contact">
-                  <a href="">
-                    <img src="icon-instagram.svg" alt="facebookicon" />
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.instagram.com/befabulousv"
+                  >
+                    <img src="icon-instagram.svg" alt="instagram icon" />
                   </a>
-                  <a href="">
-                    <img src="icon-facebook.svg" alt="facebookicon" />
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.facebook.com/BeFabulousV"
+                  >
+                    <img src="icon-facebook.svg" alt="facebook icon" />
                   </a>
                   <div>Veerle Van Overloop</div>
                   <div>Vinkenlaan 26</div>
                   <div className="pb2">9250 Waasmunster</div>
-                  <div>0473/71 29 11</div>
+                  <div>
+                    <a className="emailLink" href="tel:+32473712911">
+                      0473/71 29 11
+                    </a>
+                  </div>
                   <div>
                     <a className="emailLink" href="mailto:veerle@fabulousv.be">
                       veerle@fabulousv.be
